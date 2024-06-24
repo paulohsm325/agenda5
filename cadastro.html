@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastro.css">
+    
+</head>
+<body>
+    <header>AGENDA DE CONTATO</header>
+    <div class="containerpai">
+        <form class="containerfilho">
+            <div class="input-group">
+                <div class="input-item">
+                    <label id="labelnm" for="nome">Nome</label>
+                    <input class="inputnome" type="text" id="nome" name="nome" disabled>
+                </div>
+                <div class="input-item">
+                    <label id="labelsm" for="sobrenome">Sobrenome</label>
+                    <input  type="text" id="sobrenome" name="sobrenome" disabled>
+                </div>
+            </div>
+            <div class="input-item">
+                <label for="endereco">Endereço</label>
+                <input class="uinptendereco" type="text" id="endereco" name="endereco" disabled>
+            </div>
+            <div class="input-item">
+                <label for="telefone">Telefone</label>
+                <input class="inputtelefone" type="number" id="telefone" name="telefone" disabled>
+            </div>
+        </form>    
+        <div class="botao">
+            <button class="incluir" type="button" onclick="incluir()">INCLUIR</button>
+            <button class="editar" type="button" onclick="editar()">EDITAR</button>
+            <button class="salvar" type="button" onclick="salvar()">SALVAR</button>
+            <button class="cancelar" type="button" onclick="cancelar()">CANCELAR</button>
+            <button class="excluir" type="button" onclick="excluir()">EXCLUIR</button>
+        </div>
+    </div>
+    <div>
+        <button class="inferior-btn" type="button" onclick="primeiro()">|<</button>
+        <button class="inferior-btn" type="button" onclick="anterior()"><</button>
+        <button class="inferior-btn" type="button" onclick="proximo()">></button>
+        <button class="inferior-btn" type="button" onclick="ultimo()">>|</button>
+    </div>
+    <footer>
+        <p>AGENDA DE CONTATO</p>
+    </footer>
+    <script src="cadastro.js"></script>
+
+</body>
+</html>

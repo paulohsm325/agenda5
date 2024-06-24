@@ -1,0 +1,354 @@
+body {
+    height: 100%;
+    padding-top: 60px;
+}
+footer{
+    background: #FFFFFF;
+
+   color: aqua;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 50px;
+   font-size: 20px;
+   text-align: center;
+   
+   
+}
+
+.containerpai {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.containerfilho {
+    display: flex;
+    flex-direction: column;
+    background: #D9D9D9;
+    padding: 20px;
+    width: 500px;
+}
+
+button {
+    border: 0;
+}
+
+.botao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 0px;
+}
+
+
+header {
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+    font-size: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+
+}
+
+.input-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    width: 465px;
+}
+
+
+.input-item:last-child {
+    margin-right: 0;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+
+}
+
+label {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+
+
+.buton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.incluir {
+    background: #068622;
+    color: white;
+    height: 40px;
+    width: 100px;
+}
+
+.editar {
+    background: #FD9800;
+    color: white;
+    height: 40px;
+    width: 100px;
+}
+
+.salvar {
+    background: #04C9F4;
+    height: 40px;
+    width: 100px;
+    color: white;
+}
+
+.cancelar {
+    height: 40px;
+    width: 100px;
+    background-color: #FFFFFF;
+    color: #04C9F4;
+
+}
+
+.excluir {
+    background: #F40404;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border: #000000
+}
+
+#telefone {
+    width: 218px;
+    height: 30px;
+    top: 236px;
+    left: 17px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+#endereço {
+    width: 436px;
+    height: 50px;
+    top: 174.7px;
+    left: 17px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+#nome {
+    width: 211px;
+    height: 30px;
+    top: 105.73px;
+    left: 17px;
+
+
+
+}
+
+#sobrenome {
+    width: 200px;
+    height: 30px;
+    top: 105.73px;
+    left: 17px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+
+.navegaçao {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.inferior-btn {
+    padding: 10px;
+    width: 123px;
+    font-size: 1em;
+    margin: 0 5px;
+    border: none;
+    background: #000000;
+    margin-top: 5px;
+    color: white;
+
+    cursor: pointer;
+}
+
+.uinptendereco {
+    height: 30px;
+    width: 455PX;
+}
+
+.botao button.active {
+    background-color: green;
+    color: rgb(243, 240, 240);
+}
+
+
+.botao button:disabled {
+    background-color: rgb(255, 254, 254);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+    .containerfilho {
+        width: 100%;
+    }
+
+    .input-item {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #endereço {
+        width: 100%;
+    }
+
+    #nome,
+    #sobrenome {
+        width: 100%;
+    }
+
+    #telefone {
+        width: 100%;
+    }
+}
+
+.input-item input {
+    max-width: 896px
+        /* Limita a largura máxima para o tamanho do contêiner pai */
+}
+
+
+@media screen and (max-width: 896px) {
+    .containerfilho {
+        width: 100%;
+    }
+
+    .input-item {
+        width: 95%;
+
+        margin-right: 0;
+        margin-bottom: 10px;
+        /* Adicione margem inferior para separação entre os campos */
+    }
+
+    input {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .button button {
+        width: 100%;
+        max-width: 100px;
+    }
+
+    #sobrenome {
+        width: 95%;
+        height: 10px;
+        margin-left: 10px;
+
+    }
+
+    #nome {
+
+        width: 95%;
+        height: 10px;
+    }
+
+    .uinptendereco{
+        width: 106%;
+        height: 10px;
+    }
+
+    #telefone{
+        width: 50%;
+        height: 10px;
+    }
+
+    .inferior-btn {
+        width: 65px;
+    }
+
+    .containerfilho {
+        width: 400px;
+    }
+
+    .incluir {
+        width: 50px;
+        height: 50px;
+        font-size: 7px;
+
+    }
+
+    .editar {
+        width: 50px;
+        height: 30px;
+        font-size: 7px;
+
+    }
+
+    .incluir {
+        width: 50px;
+        height: 30px;
+        font-size: 7px;
+
+    }
+
+    .salvar {
+        width: 50px;
+        height: 30px;
+        font-size:7px;
+
+    }
+
+    .cancelar {
+        width: 50px;
+        height: 30px;
+        font-size: 7px;
+
+    }
+
+    .excluir {
+        width: 50px;
+        height: 30px;
+        font-size: 7px;
+
+    }
+
+    
+
+
+}
+
